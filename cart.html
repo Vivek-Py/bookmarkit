@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://ui-slayer.vercel.app/index.css" />
+      <link rel="stylesheet" href="./index.css" />
+      <script
+        src="https://kit.fontawesome.com/35549b5c74.js"
+        crossorigin="anonymous"
+      ></script>
+      <title>Cart</title>
+    </head>
+  </head>
+  <body>
+    <header class="navbar row">
+      <a class="nav-brand h2" href="./index.html" rel="noopener noreferrer"
+        >BookmarkIt</a
+      >
+      <div class="nav row justify-end">
+        <input type="text" class="input" placeholder="Search for..." />
+        <a class="nav-item" href="./login.html" rel="noopener noreferrer"
+          ><button class="primary-btn">Login</button></a
+        >
+        <a class="nav-item" href="./wishlist.html" rel="noopener noreferrer">
+          <div class="badge-wrapper">
+            <i class="fas fa-solid fa-heart fa-2x icon">
+              <div class="badge__icon--right">2</div>
+            </i>
+          </div>
+        </a>
+        <a class="nav-item" href="./cart.html" rel="noopener noreferrer">
+          <div class="badge-wrapper">
+            <i class="fas fa-solid fa-cart-arrow-down fa-2x icon">
+              <div class="badge__icon--right">1</div>
+            </i>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <h2 class="h2 center-text">My Cart(1)</h2>
+
+      <section class="grid-2">
+        <div class="card-wrapper horizontal no-padding">
+          <img
+            class="card-img responsive-img"
+            loading="lazy"
+            src="https://picsum.photos/350/220"
+            alt="Sample Avatar"
+          />
+          <section>
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+            <p class="text-sm price-cut">$100</p>
+            <h4 class="h4">$19</h4>
+            <button class="primary-btn">Remove from cart</button>
+            <button class="secondary-btn margin-top">Add to wishlist</button>
+          </section>
+        </div>
+        <section class="flex-column checkout">
+          <h4 class="h4 center-text">PRICE DETAILS</h4>
+          <hr />
+          <div class="flex-row no-padding">
+            <p class="text-sm">Price Item</p>
+            <p class="text-sm">$19</p>
+          </div>
+          <div class="flex-row no-padding">
+            <p class="text-sm">Discount Price</p>
+            <p class="text-sm">$10</p>
+          </div>
+          <hr />
+          <div class="flex-row no-padding">
+            <h4 class="h4">Total Amount</h4>
+            <h4 class="h4">$9</h4>
+          </div>
+          <button class="primary-btn">Proceed to checkout</button>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

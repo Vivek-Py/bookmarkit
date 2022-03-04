@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookmarkIt</title>
+    <link rel="stylesheet" href="https://ui-slayer.vercel.app/index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/35549b5c74.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Top section for the header and navigation -->
+    <header class="navbar row">
+      <a class="nav-brand h2" href="./index.html" rel="noopener noreferrer"
+        >BookmarkIt</a
+      >
+      <div class="nav row justify-end">
+        <input type="text" class="input" placeholder="Search for..." />
+        <a class="nav-item" href="./login.html" rel="noopener noreferrer"
+          ><button class="primary-btn">Login</button></a
+        >
+        <a class="nav-item" href="./wishlist.html" rel="noopener noreferrer">
+          <div class="badge-wrapper">
+            <i class="fas fa-solid fa-heart fa-2x icon">
+              <div class="badge__icon--right">2</div>
+            </i>
+          </div>
+        </a>
+        <a class="nav-item" href="./cart.html" rel="noopener noreferrer">
+          <div class="badge-wrapper">
+            <i class="fas fa-solid fa-cart-arrow-down fa-2x icon">
+              <div class="badge__icon--right">1</div>
+            </i>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- Aside and primary section -->
+    <main class="main-section grid-2 layout">
+      <aside class="sidebar">
+        <div class="flex-row">
+          <h4 class="h4">Filters</h4>
+          <button class="link-btn">Clear</button>
+        </div>
+        <!-- Stacked list for category -->
+        <ul class="stacked-list">
+          <li class="text-sm fw-700 no-padding">Category</li>
+          <li class="flex-column">
+            <label for=""><input type="checkbox" /> Men</label>
+            <label for=""><input type="checkbox" /> Women</label>
+          </li>
+        </ul>
+        <!-- Stacked list for ratings -->
+        <ul class="stacked-list">
+          <li class="text-sm fw-700 no-padding">Ratings</li>
+          <li class="flex-column">
+            <label for=""><input type="checkbox" /> 4 stars and up</label>
+            <label for=""><input type="checkbox" /> 3 stars and up</label>
+            <label for=""><input type="checkbox" /> 2 stars and up</label>
+            <label for=""><input type="checkbox" /> 1 star and up</label>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="text-sm fw-700 no-padding">Pricing</li>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+            id="slider"
+          />
+        </ul>
+      </aside>
+      <section class="section">
+        <h4 class="h4">Showing all products (Showing 6 products)</h4>
+        <!-- Row first of the grid -->
+        <div class="grid-3">
+          <div class="card-wrapper vertical no-padding">
+            <div class="card-badge">New</div>
+            <img
+              class="card-img responsive-img"
+              loading="lazy"
+              src="https://picsum.photos/350/150"
+              alt="Sample Avatar"
+            />
+            <section>
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+              <p class="text-sm price-cut">$100</p>
+              <h4 class="h4">$8</h4>
+              <button class="primary-btn">Add to Cart</button>
+              <button class="secondary-btn">Wishlist</button>
+            </section>
+          </div>
+          <div class="card-wrapper vertical no-padding">
+            <img
+              class="card-img responsive-img"
+              loading="lazy"
+              src="https://picsum.photos/350/150"
+              alt="Sample Avatar"
+            />
+            <section>
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+              <p class="text-sm price-cut">$100</p>
+              <h4 class="h4">$19</h4>
+              <button class="primary-btn">Add to Cart</button>
+              <button class="secondary-btn">Wishlist</button>
+            </section>
+          </div>
+          <div class="card-wrapper vertical no-padding">
+            <div class="card-badge">New</div>
+            <img
+              class="card-img responsive-img"
+              loading="lazy"
+              src="https://picsum.photos/350/150"
+              alt="Sample Avatar"
+            />
+            <section>
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+              <p class="text-sm price-cut">$100</p>
+              <h4 class="h4">$29</h4>
+              <button class="primary-btn">Add to Cart</button>
+              <button class="secondary-btn">Wishlist</button>
+            </section>
+          </div>
+        </div>
+
+        <!-- Row second of the grid -->
+        <div class="grid-3">
+          <div class="card-wrapper vertical no-padding">
+            <img
+              class="card-img responsive-img"
+              loading="lazy"
+              src="https://picsum.photos/350/150"
+              alt="Sample Avatar"
+            />
+            <section>
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+              <p class="text-sm price-cut">$100</p>
+              <h4 class="h4">$100</h4>
+              <button class="primary-btn">Add to Cart</button>
+              <button class="secondary-btn">Wishlist</button>
+            </section>
+          </div>
+          <div class="card-wrapper vertical no-padding">
+            <div class="card-badge">Trending</div>
+            <img
+              class="card-img responsive-img"
+              loading="lazy"
+              src="https://picsum.photos/350/150"
+              alt="Sample Avatar"
+            />
+            <section>
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+              <p class="text-sm price-cut">$100</p>
+              <h4 class="h4">$90</h4>
+              <button class="primary-btn">Add to Cart</button>
+              <button class="secondary-btn">Wishlist</button>
+            </section>
+          </div>
+          <div class="card-wrapper vertical no-padding">
+            <img
+              class="card-img responsive-img"
+              loading="lazy"
+              src="https://picsum.photos/350/150"
+              alt="Sample Avatar"
+            />
+            <section>
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+              <p class="text-sm price-cut">$100</p>
+              <h4 class="h4">$100</h4>
+              <button class="primary-btn">Add to Cart</button>
+              <button class="secondary-btn">Wishlist</button>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

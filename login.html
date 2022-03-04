@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://ui-slayer.vercel.app/index.css" />
+      <link rel="stylesheet" href="./index.css" />
+      <script
+        src="https://kit.fontawesome.com/35549b5c74.js"
+        crossorigin="anonymous"
+      ></script>
+      <title>Cart</title>
+    </head>
+  </head>
+  <body>
+    <header class="navbar row">
+      <a class="nav-brand h2" href="./index.html" rel="noopener noreferrer"
+        >BookmarkIt</a
+      >
+      <div class="nav row justify-end">
+        <input type="text" class="input" placeholder="Search for..." />
+        <a class="nav-item" href="./login.html" rel="noopener noreferrer"
+          ><button class="primary-btn">Login</button></a
+        >
+        <a class="nav-item" href="./wishlist.html" rel="noopener noreferrer">
+          <div class="badge-wrapper">
+            <i class="fas fa-solid fa-heart fa-2x icon">
+              <div class="badge__icon--right">2</div>
+            </i>
+          </div>
+        </a>
+        <a class="nav-item" href="./cart.html" rel="noopener noreferrer">
+          <div class="badge-wrapper">
+            <i class="fas fa-solid fa-cart-arrow-down fa-2x icon">
+              <div class="badge__icon--right">1</div>
+            </i>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <form action="" class="form card-wrapper vertical">
+        <h4 class="h4 center-text">Signup</h4>
+        <div class="input-wrapper">
+          <label for="example-two">Email Address</label>
+          <input
+            name="example-two"
+            class="input"
+            placeholder="Enter your Email Address"
+            required
+          />
+        </div>
+        <div class="input-wrapper">
+          <label for="example-two">Password</label>
+          <input
+            name="example-two"
+            type="password"
+            class="input"
+            required
+            placeholder="Enter your password"
+          />
+        </div>
+        <label for=""><input type="checkbox" /> Save my login info</label>
+        <a href=""><h5 class="h5">Already user? Sign-in</h5></a>
+        <div>
+          <button type="submit" class="primary-btn">Signup</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
